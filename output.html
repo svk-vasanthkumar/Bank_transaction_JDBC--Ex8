@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bank Transaction Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  body { font-family: Arial, sans-serif; background:#eef2f3; margin:0; padding:20px; }
+  .header {
+    background:#339966; color:#fff; padding:12px; text-align:center;
+    font-size:22px; font-weight:bold; border-radius:6px;
+  }
+  .wrap { max-width: 900px; margin: 20px auto; }
+  table {
+    width:100%; border-collapse:collapse; background:#fff; margin-top:16px;
+    border:1px solid #ccc; border-radius:6px; overflow:hidden;
+  }
+  th, td { padding:10px; border:1px solid #ccc; text-align:center; }
+  th { background:#339966; color:#fff; }
+  tr:nth-child(even) { background:#f2f2f2; }
+  .footer { margin-top:12px; font-size:12px; color:#555; text-align:right; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">Bank Customers Transaction Details</div>
+
+    <table aria-label="Bank Transactions">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Customer Name</th>
+          <th>Account Number</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample rows (you can remove these if your Java generates rows) -->
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>123456789</td>
+          <td>$1000.50</td>
+          <td>2024-09-15</td>
+          <td>ATM Withdrawal</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>987654321</td>
+          <td>$500.75</td>
+          <td>2024-09-16</td>
+          <td>UPI Payment</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Michael Johnson</td>
+          <td>192837465</td>
+          <td>$2500.00</td>
+          <td>2024-09-17</td>
+          <td>Salary Credit</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Emily Davis</td>
+          <td>564738291</td>
+          <td>$750.25</td>
+          <td>2024-09-18</td>
+          <td>Shopping Payment</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">Generated Report</div>
+  </div>
+</body>
+</html>
